@@ -139,14 +139,16 @@ function renderLogin() {
   <div class="login">
     <section class="login-art">
       <div class="brand"><div class="brand-logo" style="background:rgba(255,255,255,.18)">CB</div><div><div class="brand-name" style="color:#fff">Code<span style="color:#ffd8a8">Boomz</span></div><div class="brand-sub" style="color:rgba(255,255,255,.7)">India's next-gen tech education</div></div></div>
-      <pre class="code-float">const learner = await codeboomz.enroll();\nlearner.practice({ daily: true });\n// 🔥 streak: 7 days\n// 🎯 readiness: 82 / 100\nawait learner.getPlaced();</pre>
-      <h1>One place to teach, track<br>and get every learner job-ready.</h1>
-      <p>Live classes, attendance, assignments, fees and a built-in Code Lab — with an AI-style At-Risk Radar that tells mentors who needs help before it's too late.</p>
-      <div class="feature-list">
-        <div>💻 Code Lab<small>Run & auto-grade JS / Python</small></div>
-        <div>📡 At-Risk Radar<small>Spot drop-offs early</small></div>
-        <div>🎯 Placement Readiness<small>A score every learner understands</small></div>
-        <div>🔥 Streaks & XP<small>Gamified, daily motivation</small></div>
+      <div class="art-body">
+        <pre class="code-float"><span class="k">const</span> learner = <span class="k">await</span> codeboomz.enroll();\nlearner.practice({ daily: <span class="k">true</span> });\n<span class="c">// streak: 7 days · readiness: 82/100</span>\n<span class="k">await</span> learner.getPlaced();</pre>
+        <h1>One place to teach, track and get every learner job-ready.</h1>
+        <p>Live classes, attendance, assignments, fees and a built-in Code Lab — with an At-Risk Radar that tells mentors who needs help before it's too late.</p>
+        <div class="feature-list">
+          <div>💻 Code Lab<small>Run & auto-grade JS / Python</small></div>
+          <div>📡 At-Risk Radar<small>Spot drop-offs early</small></div>
+          <div>🎯 Placement Readiness<small>A score every learner understands</small></div>
+          <div>🔥 Streaks & XP<small>Gamified, daily motivation</small></div>
+        </div>
       </div>
       <div class="foot">© ${new Date().getFullYear()} CodeBoomz · codeboomz.com</div>
     </section>
