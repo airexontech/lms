@@ -1,0 +1,18 @@
+{
+  "name": "codeboomz-lms",
+  "version": "1.0.0",
+  "description": "CodeBoomz LMS - batches, attendance, assignments, fees, in-browser code lab, at-risk radar, XP and placement readiness. Zero dependencies.",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --no-warnings server/index.js",
+    "seed": "node --no-warnings server/seed.js",
+    "reset": "node --no-warnings server/seed.js --reset",
+    "dev": "node --no-warnings --watch server/index.js"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
