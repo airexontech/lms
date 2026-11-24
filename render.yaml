@@ -1,0 +1,15 @@
+# One-click deploy of the CodeBoomz LMS demo on Render's free plan.
+# Render dashboard -> New -> Blueprint -> pick this repo and the "codeboomz-lms" branch.
+services:
+  - type: web
+    name: codeboomz-lms
+    runtime: docker
+    plan: free
+    branch: codeboomz-lms
+    dockerfilePath: ./codeboomz-lms/Dockerfile
+    dockerContext: ./codeboomz-lms
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: TZ
+        value: Asia/Kolkata
